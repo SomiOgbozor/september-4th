@@ -2,7 +2,13 @@ body{
 	background-color: #F5F5F5;
 }
 
-video{
-	width: 95%;
-	height: 50%;
+.video-container{
+	width: 75%;
+	height: 75%;
+	margin: auto;
+	display: block;
+}
+
+@media only screen and (min-width: 600px) {
+	.video-class {width: 75%; height: 75%; margin: auto; display: block;}
 }
