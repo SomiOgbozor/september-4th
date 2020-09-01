@@ -1,5 +1,10 @@
 body{
 	background-color: #F5F5F5;
+  font-family: 'Gayathri', sans-serif;
+}
+
+h3{
+  text-align: center;
 }
 
 .video-container{
