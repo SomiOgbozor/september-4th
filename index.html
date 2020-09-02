@@ -5,14 +5,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="magic.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<title>Prelude</title>
 </head>
 <body>
-	<h3>Prelude</h3>
-	<div class="video-container">
-		<video class="video-class" controls poster="resources/IMG_2299.jpg">
-			<source src="resources/prelude.mov" type="video/mp4">
-		</video>
+	<div class="header">
+		<h3>Prelude</h3>
 	</div>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide preview">
+				<img src="resources/IMG_2300.jpg" id="prelude-img">
+				<p class="preview-text">Swipe Left to Watch <== <==</p>
+			</div>
+			<div class="video-container swiper-slide">
+				<video class="video-class" controls poster="resources/IMG_2300.jpg">
+					<source src="resources/prelude.mov" type="video/mp4">
+				</video>
+			</div>
+		</div>
+	</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container');
+  </script>
 </body>
 </html>
