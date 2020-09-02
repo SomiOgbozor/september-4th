@@ -6,17 +6,33 @@
 	<link rel="stylesheet" type="text/css" href="../styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../magic.css">
-	<script type="text/javascript" src="../index.js"></script>
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<title>Interlude 1</title>
 </head>
 <body>
 	<div class="header">
 		<h3>Interlude 1</h3>
 	</div>
-	<div class="video-container">
-		<video class="video-class" controls poster="../resources/58234929123__6393A2CB-1FEE-4C1C-9233-EFA3D03003A9.jpeg">
-			<source src="../resources/interlude-1.mov" type="video/mp4">
-		</video>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide preview">
+				<img src="../resources/58234929123__6393A2CB-1FEE-4C1C-9233-EFA3D03003A9.jpeg">
+				<p class="preview-text">Swipe Left to Watch <== <==</p>
+			</div>
+			<div class="video-container swiper-slide">
+				<video class="video-class" controls poster="../resources/58234929123__6393A2CB-1FEE-4C1C-9233-EFA3D03003A9.jpeg">
+					<source src="../resources/interlude-1.mov" type="video/mp4">
+				</video>
+			</div>
+		</div>
 	</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container');
+  </script>
 </body>
 </html>
